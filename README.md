@@ -1,4 +1,20 @@
-# Final-CS207-Project
+## Disco Night Lights
+Made lighs that turn on when it gets dark that would work well in a night club
+
+## Table of contents
+* [General info](#general-info)
+* [Program](#program-used)
+* [Code](#code-for-the-project)
+* [Status](#status)
+* [Credit](#credit)
+
+## General info
+This project works around the light sensor. Everything that happens in this project is based on the numbers that the light sensor transmitts.If there is light in the room the lights won't turn on. If it starts to get darker in the room, you get warning lights. Then you turn on the light wanted that only change when something gets in front of the sensor allowing even less light to hit it and hence starting to change colors. Then it saves whatever light it was left on and in case lights are turned back on. As the lights start to come back, you will get warning lights again advising you of the occuring change. I took motivation for this project, mainly because I always wanted to make my own night lights and have them act the way I want them to.
+
+## Program used
+Arduino app
+
+## Code for the project
 #include <EEPROM.h> 
 const int redPin = 9;
 const int greenPin = 10;
@@ -126,3 +142,9 @@ void hsv2rgb(float h, float s, float v, float &r, float &b)
   b *= 255;
 
 }
+
+## Status
+Project is finished, few changes could be made.
+
+## Credit
+Took most ideas from labs done in my cs 207 class. Mainly when usign the RGB LED.
